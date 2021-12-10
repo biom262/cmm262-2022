@@ -1,6 +1,6 @@
-# CMM262 - Winter 2021
+# CMM262 - Winter 2022
 
-<!-- [![slack badge](https://img.shields.io/badge/Join%20Slack-blueviolet?style=for-the-badge&logo=slack)](https://join.slack.com/t/cmm262-2021/shared_invite/zt-kr17r6m8-OvVlp4Ys66JPjqeP3bmDHg) -->
+<!-- [![slack badge](https://img.shields.io/badge/Join%20Slack-blueviolet?style=for-the-badge&logo=slack)](https://join.slack.com/t/cmm262-2022/shared_invite/zt-kr17r6m8-OvVlp4Ys66JPjqeP3bmDHg) -->
 [![jupyterhub badge](https://img.shields.io/badge/Login%20to%20JupyterHub-grey?style=for-the-badge&logo=jupyter)](https://datahub.ucsd.edu/hub/login)
 
 Welcome to the course website for CMM262: Quantitative Methods in Genetics and Genomics! 
