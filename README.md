@@ -7,7 +7,7 @@ Welcome to the course website for CMM262: Quantitative Methods in Genetics and G
 
 ## Course Organization
 
-This interactive course is taught by a variety of experts in the field of genetics and genomics! These experts will go over the conceptual background behing different sequencing technologies and/or analytical techniques, as well as provide an interactive introduction to performing bioinformatics analyses in the form of `Jupyter Notebooks`. 
+This interactive course is taught by a variety of experts in the field of genetics and genomics! These experts will go over the conceptual background behind different sequencing technologies and/or analytical techniques, as well as provide an interactive introduction to performing bioinformatics analyses in the form of `Jupyter Notebooks`. 
 
 Check out [the course syllabus](CMM262-Syllabus-2022.ipynb) for more details.
 
