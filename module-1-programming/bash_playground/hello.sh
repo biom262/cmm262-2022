@@ -1,3 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-echo "Hello World"
+# this is a comment; it will be ignored
+
+echo "Hello world!"

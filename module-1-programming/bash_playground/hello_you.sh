@@ -1,5 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-name=$1
-
-echo "Hello $1"
+echo "Hello $1"!
