@@ -18,3 +18,5 @@
 18
 19
 I am secret text from a hidden file
+Here's chr21:
+https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr21.fa.gz
