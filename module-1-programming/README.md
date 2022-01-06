@@ -7,5 +7,5 @@ In this module, we will explore a basic introduction to programming concepts in 
 
 ## Lecture Recordings
 
-* **Day 1 Lecture (January 4th, 2022):** TBD
-* **Day 2 Lecture (January 6th, 2022):** TBD
+* **Day 1 Lecture (January 4th, 2022):** https://drive.google.com/file/d/148O_SOavd8e78X-z6sjAC_oM7JWdbX3i
+* **Day 2 Lecture (January 6th, 2022):** https://drive.google.com/file/d/11DnV129iPNDoQi-2BGuXYCdY7Z3ox18w
