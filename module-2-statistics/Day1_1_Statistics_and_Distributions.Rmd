@@ -7,25 +7,22 @@ output:
 
 # CMM262: Statistics, Day 1 - Part 1 - Visualizing Data, Summary Statistics, and Distributions
 
-**Credits**: Based on a prior notebook developed by former TAs Michelle Franc Ragsac (mragsac@eng.ucsd.edu) and Clarence Mah (ckmah@ucsd.edu) .
-
-
-![Image of the Chinstrap, Gentoo, and Adélie penguins from the Palmer Penguins dataset](img/day1_penguins.png)
-
-### Exercise 1 - Visualizing Data
-
-> The Palmer Penguins dataset is based on data points collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) and the [Palmer Station, Antarctica LTER](https://pal.lternet.edu/), a member of the [Long Term Ecological Research Network](https://lternet.edu/).
->
-> Source: https://allisonhorst.github.io/palmerpenguins/
-
+**Credits**: Written by Graham McVicker. Some parts based on a prior notebook developed by TAs Michelle Franc Ragsac (mragsac@eng.ucsd.edu) and Clarence Mah (ckmah@ucsd.edu) .
 
 
 ```{r}
-# install the Palmer Penguins dataset
+# install required packages
 install.packages("palmerpenguins", repos="https://cloud.r-project.org")
 install.packages("ggridges", repos="https://cloud.r-project.org")
 ```
 
+
+### Exercise 1 - Summary Statistics
+
+
+> The Palmer Penguins dataset is based on data points collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) and the [Palmer Station, Antarctica LTER](https://pal.lternet.edu/), a member of the [Long Term Ecological Research Network](https://lternet.edu/).
+>
+> Source: https://allisonhorst.github.io/palmerpenguins/
 
 
 Let's import the Palmer penguins library and load the penguins dataset
@@ -44,74 +41,6 @@ We can get a quick summary of the whole dataset using 'summary':
 
 ```{r}
 summary(penguins)
-```
-
-When working with data, it is really important to visualize it. This provides you with a much better understanding of the data than simply computing a few statistics.
-
-A histogram provides perhaps the simplest way to visualize data. Let's start by looking at bill length and bill depth. 
-# TODO: add image showing bill length and bill depth?
-
-The simplest way to make a histogram is with the hist function. 
-```{r}
-hist(penguins$bill_depth_mm)
-```
-
-We can use the breaks parameter to control the binning:
-```{r}
-hist(penguins$bill_length_mm, breaks=30)
-```
-
-[ggplot2](https://ggplot2.tidyverse.org/index.html) provides more powerful methods for plotting. ggplots syntax can take some getting used to. I recommend using a [ggplot2 cheatsheet](https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/data-visualization-2.1.pdf) for reference.
-
-
-```{r}
-library(ggplot2)
-ggplot(data=penguins, aes(bill_length_mm)) + geom_histogram()
-```
-
-
-Notice that the distribution looks bimodal. And remember we have 3 different species of penguin in our dataset. Let's see if the bill length differs by species. Let's make separate overlapping histograms in different colors for each species.
-
-```{r}
-ggplot(penguins, aes(x=bill_length_mm, fill=species)) + geom_histogram(position="identity", alpha=0.6, binwidth=2)
-```
-
-We can also visualize the distributions of the species as separate plots, using one of ggplot's faceting functions.
-
-```{r}
-ggplot(penguins, aes(x=bill_length_mm, fill=species)) + geom_histogram(binwidth=2) + facet_wrap(.~species)
-```
-
-If we want a more compact display, we can use boxplots or violin plots
-
-
-```{r}
-ggplot(penguins, aes(x=bill_length_mm, fill=species)) + geom_boxplot()
-```
-
-
-
-ggridges is a cool package that lets you plot overlapping density plots (smoothed histograms).
-
-```{r}
-library(ggridges)
-ggplot(penguins, aes(x=bill_length_mm, y=species, fill=species)) + geom_density_ridges()
-```
-
-
-What if we want to view two variables at once for example, bill length and bill depth? We can use a scatter plot to view their joint distribution. We can use color and plotting shapes to indicate species and sex. 
-
-```{r}
-ggplot(penguins, aes(x=bill_length_mm, y=bill_depth_mm, color=species, shape=sex)) + geom_point()
-```
-
-
-### Exercise 2 - Summary Statistics
-
-First, let's plot the distributions of bill lengths of male and female penguins separately for each species.
-
-```{r}
-ggplot(penguins, aes(x=bill_length_mm, fill=sex)) + geom_histogram(position="identity", alpha=0.6, binwidth=2) + facet_wrap(.~species)
 ```
 
 
@@ -175,9 +104,173 @@ median(penguins$bill_length_mm[male.chinstraps])
 median(penguins$bill_length_mm[female.chinstraps])
 ```
 
-Summary statistics are really useful, but they often obscure different characteristics of the data, such as the shape of the distribution or the presence of outliers. For example, if we just computed summary statistics on all penguins, we might not have realized that there were two modes or that different species of penguins had different distributions. In summary, compute summary statistics, but also visualize your data! 
 
-### Exercise 3 - The binomial distribution
+
+
+### Exercise 2 - Visualizing Data
+
+Summary statistics are really useful, but they often obscure characteristics of the data, such as the shape of the distribution or the presence of outliers.  Compute summary statistics, but also visualize your data! 
+
+A histogram provides perhaps the simplest way to visualize data. Let's start by looking at bill length and bill depth. 
+# TODO: add image showing bill length and bill depth?
+
+The simplest way to make a histogram is with the hist function. 
+```{r}
+hist(penguins$bill_depth_mm)
+```
+
+We can use the breaks parameter to control the binning:
+```{r}
+hist(penguins$bill_length_mm, breaks=30)
+```
+
+[ggplot2](https://ggplot2.tidyverse.org/index.html) provides more powerful methods for plotting. ggplots syntax can take some getting used to. I recommend using a [ggplot2 cheatsheet](https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/data-visualization-2.1.pdf) for reference.
+
+
+```{r}
+library(ggplot2)
+ggplot(data=penguins, aes(bill_length_mm)) + geom_histogram()
+```
+
+
+Notice that the distribution looks bimodal. And remember we have 3 different species of penguin in our dataset. Let's see if the bill length differs by species. Let's make separate overlapping histograms in different colors for each species.
+
+```{r}
+ggplot(penguins, aes(x=bill_length_mm, fill=species)) + geom_histogram(position="identity", alpha=0.6, binwidth=2)
+```
+
+We can also visualize the distributions of the species as separate plots, using one of ggplot's faceting functions.
+
+```{r}
+ggplot(penguins, aes(x=bill_length_mm, fill=species)) + geom_histogram(binwidth=2) + facet_wrap(.~species)
+```
+
+If we want a more compact display, we can use boxplots or violin plots
+
+
+```{r}
+ggplot(penguins, aes(x=bill_length_mm, fill=species)) + geom_boxplot()
+```
+
+
+
+ggridges is a cool package that lets you plot overlapping density plots (smoothed histograms).
+
+```{r}
+library(ggridges)
+ggplot(penguins, aes(x=bill_length_mm, y=species, fill=species)) + geom_density_ridges()
+```
+
+
+What if we want to view two variables at once for example, bill length and bill depth? We can use a scatter plot to view their joint distribution. We can use color and plotting shapes to indicate species and sex. 
+
+```{r}
+ggplot(penguins, aes(x=bill_length_mm, y=bill_depth_mm, color=species, shape=sex)) + geom_point()
+```
+
+
+
+Let's plot the distributions of bill lengths of male and female penguins separately for each species.
+
+```{r}
+ggplot(penguins, aes(x=bill_length_mm, fill=sex)) + geom_histogram(position="identity", alpha=0.6, binwidth=2) + facet_wrap(.~species)
+```
+
+
+
+
+### Exercise 3 - Introduction to distributions in R using the binomial distribution as an example
+
+R has many built-in functions for working with distributions. These generally follow these conventions:
+
+Probability Density Functions (PDFs and PMFs) start with 'd' for 'density'.
+
+Cumulative Distribution Functions (CDFs) start with p for 'probability'.
+
+Quantile Functions start with q. 
+
+Functions to generate random values from a distribution start with 'r' for random.
+
+Let's learn how to use these functions in the context of the binomial distribution. The binomial distribution describes the number of 'successes' (k) observed from n Bernoulli trials.
+
+
+Let's plot the binomial PMF using parameters: n=10 and p=0.1.
+
+```{r}
+n = 10
+k = seq(0, n, by=1)
+p = 0.1
+y = dbinom(k, n, p)
+
+binom.pmf <- data.frame(k=k, mass=y)
+
+ggplot(binom.pmf,  aes(k, mass)) + geom_point(color="blue", size=3) + theme_bw(base_size=22)
+```
+Now let's plot the binomial Probability Mass Function for n=15, and p=0.5.
+
+```{r}
+n = 15
+p=0.5
+k = seq(0, n, by=1)
+y = dbinom(k, n, p)
+
+binom.pmf <- data.frame(k=k, mass=y)
+
+ggplot(binom.pmf,  aes(k, mass)) + geom_point(color="blue", size=3) + theme_bw(base_size=22)
+```
+
+Now let's randomly sample from the binomial distribution with the same parameters as above.
+
+```{r}
+num.samples <- 100
+k <- rbinom(num.samples, 15, 0.5)
+
+# Plot a histogram of the random sample
+hist(k, breaks=10)
+```
+
+
+
+Revisiting the penguin dataset, how many male penguins are there in our sample?
+
+```{r}
+library(palmerpenguins)
+
+# remove samples where sex is unknown
+penguins <- penguins[!is.na(penguins$sex),]
+
+
+n.male = sum(penguins$sex == "male")
+n.female = sum(penguins$sex == "female")
+n.penguin = n.male + n.female
+
+cat("There are", n.male, "male and", n.female, "female penguins" )
+```
+
+Assuming proportion parameter for male/female is 50%, what is the probability of observing exactly this number of male penguins in our sample?
+
+```{r}
+dbinom(n.male, n.penguin, 0.5)
+```
+
+
+Let's plot the theoretical probability density function for the sample of n penguins, asssuming p=0.5
+
+```{r}
+n = n.penguin
+p=0.5
+k = seq(0, n, by=1)
+y = dbinom(k, n, p)
+
+binom.pmf <- data.frame(k=k, mass=y)
+
+ggplot(binom.pmf,  aes(k, mass)) + geom_point(color="blue", size=3) + theme_bw(base_size=22)
+```
+
+Is it surprising that we observed this many male penguins? How might we test this? 
+
+Next class we will discuss hypothesis testing.
+
 
 
 
