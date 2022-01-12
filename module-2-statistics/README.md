@@ -7,5 +7,5 @@ Within this module, we'll be covering some of the basic concepts that you would 
 
 ## Lecture Recordings
 
-* **Day 1 Lecture (January 11th, 2022):** TBD
+* **Day 1 Lecture (January 11th, 2022):** https://drive.google.com/file/d/1Ih-EKnPDJ6AaQbMz_KRNBE33TKVn5GW7
 * **Day 2 Lecture (January 13th, 2022):** TBD
