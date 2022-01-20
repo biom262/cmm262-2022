@@ -17,7 +17,7 @@ Check out [the course syllabus](CMM262-Syllabus-2022.ipynb) for more details.
 |------|-------------------|---------------------------------------------------------|------------------------------------|-----------------------------------------------------------------------------------|-------------|
 | 1    | January 4, 2022   | **Module 1:** Programming Basics in Python, UNIX, and R | TAs                                | [Module 1](module-1-programming) | None        |
 | 2    | January 11, 2022  | **Module 2:** Introduction to Statistics                | Graham McVicker                    | [Module 2](module-2-statistics)  | None        |
-| 3    | January 18, 2022  | **Module 3:** Genome-Wide Association Studies (GWAS)    | Graham McVicker                    | [Module 3](module-3-gwas)        | Homework 1 (due 1/27)            |
+| 3    | January 18, 2022  | **Module 3:** Genome-Wide Association Studies (GWAS)    | Graham McVicker                    | [Module 3](module-3-gwas)        | [Homework 1](hw/hw1) (due 1/27)            |
 | 4    | January 25, 2022  | **Module 4:** RNA-Sequencing (RNA-seq)                  | Priya Pantham                      | [Module 4](module-4-rnaseq)      | Homework 2 (due 2/10)  |
 | 5    | February 1, 2022  | **Module 5:** Single-Cell RNA-Sequencing (scRNA-seq)    | Robert Morey                       | [Module 5](module-5-scrnaseq)    | None        |
 | 6    | February 8, 2022  | **Module 6:** Spatial Transcriptomics                   | Noorsher Ahmed<br>Clarence Mah     | [Module 6](module-6-spatialtx)   | None        |
