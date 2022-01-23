@@ -1,9 +1,8 @@
 # GWAS
-Within this module, we'll be covering some of the basic concepts that you would find in an introductory statistics course, such as descriptive statistics and the normal distribution, along with providing an overview of data visualization and exploration.
+Within this module, we'll be covering some of the basic concepts of Genome-Wide Association Studies (GWAS).
 
 ## Presentation Slides
-* **Day 1:** 
-* **Day 2:** 
+Lecture slides can be found in the in the [Lectures](https://github.com/biom262/cmm262-2022/tree/main/module-3-gwas/Lectures) folder.
 ## Lecture Recordings
 
 * **Day 1 Lecture Part 1 (January 18th, 2022):** https://drive.google.com/file/d/1rijHWysakZ0UuLEJURxQrRQQ5vKyG_mc/view?usp=sharing
