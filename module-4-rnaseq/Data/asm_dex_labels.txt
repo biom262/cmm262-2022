@@ -1,0 +1,9 @@
+sample	condition
+A	untreated
+B	Dex
+E	untreated
+F	Dex
+I	untreated
+J	Dex
+M	untreated
+N	Dex
