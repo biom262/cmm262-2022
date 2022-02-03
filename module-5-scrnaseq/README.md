@@ -6,4 +6,5 @@ This module covers single-cell RNA sequencing technologies and bioinformatics an
 Copies can be found in the  [Lecture](Lecture) directory.
 
 ## Lecture Recordings
-* **February 1 (Day 1)** : https://drive.google.com/file/d/1nvGo3r1ROhK1OO8hYddSlwwt8xnYl7v4/view?usp=sharing
+* **February 1 (Day 1)** : https://drive.google.com/file/d/1nvGo3r1ROhK1OO8hYddSlwwt8xnYl7v4
+* **February 3 (Day 2)** : https://drive.google.com/file/d/1r-0Iwf8XWX_4_CuRkKIVmGwcJwBbQVIh
