@@ -21,7 +21,7 @@ Check out [the course syllabus](CMM262-Syllabus-2022.ipynb) for more details.
 | 4    | January 25, 2022  | **Module 4:** RNA-Sequencing (RNA-seq)                  | Priya Pantham                      | [Module 4](module-4-rnaseq)      | None  |
 | 5    | February 1, 2022  | **Module 5:** Single-Cell RNA-Sequencing (scRNA-seq)    | Robert Morey                       | [Module 5](module-5-scrnaseq)    | [Homework 2](hw/hw2) (due 2/10)        |
 | 6    | February 8, 2022  | **Module 6:** Spatial Transcriptomics                   | Noorsher Ahmed<br>Clarence Mah     | [Module 6](module-6-spatialtx)   | None        |
-| 6.5  | February 10, 2022 | <i>Content Review Day</i>                               | TAs                                | [Midterm Review](midterm-review) | **Midterm** |
+| 6.5  | February 10, 2022 | <i>Content Review Day</i>                               | TAs                                | [Midterm Review](midterm-review) | **Midterm** (due 2/17) |
 | 7    | February 15, 2022 | **Module 7:** Network Biology                           | Hannah Carter                      | [Module 7](module-7-networks)    | [Homework 3](hw/hw3) (due 2/24)                 |
 | 8    | February 22, 2022 | **Module 8:** Variant Calling                           | Kyle Gaulton                       | [Module 8](module-8-variantcalling) | None     |
 | 9    | March 1, 2022     | **Module 9:** Chromatin and ChIP-Sequencing (ChIP-seq)  | Alon Goren                         | [Module 9](module-9-chipseq)     | None        |
