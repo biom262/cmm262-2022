@@ -1,0 +1,25 @@
+File created with bingo (c) on Feb 14, 2021 at 6:29:41 AM
+
+ontology: namespace
+curator:  bingo
+
+Selected ontology file : bundle://116.0:1/data/GO_Biological_Process
+Selected annotation file : bundle://116.0:1/data/M_musculus_default
+Discarded evidence codes : 
+Overrepresentation
+Selected statistical test : Hypergeometric test
+Selected correction : Benjamini & Hochberg False Discovery Rate (FDR) correction
+Selected significance level : 0.05
+Testing option : Use whole annotation as reference set
+The selected cluster :
+E330023O18	YBX2	1700003E16RIK	2700081O15RIK	3300002I08RIK	LGTN	DDIT3	E130318E12RIK	2700017M01RIK	4930422J18RIK	BMF	2410004P03RIK	A930021O22	
+
+No annotations were retrieved for the following entities:
+2700017M01RIK	
+
+GO-ID	p-value	corr p-value	x	n	X	N	Description	Genes in test set
+51100	6.3511E-5	1.0098E-2	2	29	12	28959	negative regulation of binding	DDIT3|YBX2
+32792	4.1438E-4	2.1962E-2	1	1	12	28959	negative regulation of CREB transcription factor activity	DDIT3
+42789	4.1438E-4	2.1962E-2	1	1	12	28959	mRNA transcription from RNA polymerase II promoter	DDIT3
+51098	8.0785E-4	2.6349E-2	2	103	12	28959	regulation of binding	DDIT3|YBX2
+9299	8.2860E-4	2.6349E-2	1	2	12	28959	mRNA transcription	DDIT3
