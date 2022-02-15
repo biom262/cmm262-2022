@@ -7,4 +7,5 @@ This module covers the basics to Network analysis using the R programming langua
 
 ## Lecture Recordings
 
-To be uploaded.
+* **February 15 (Day 1)** : https://drive.google.com/file/d/1qo_Mooiktfik7dJAtA1u6LRmXkFPoa_x/view?usp=sharing
+
