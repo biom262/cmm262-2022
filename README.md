@@ -26,4 +26,4 @@ Check out [the course syllabus](CMM262-Syllabus-2022.ipynb) for more details.
 | 8    | February 22, 2022 | **Module 8:** Variant Calling                           | Kyle Gaulton                       | [Module 8](module-8-variantcalling) | None     |
 | 9    | March 1, 2022     | **Module 9:** Chromatin and ChIP-Sequencing (ChIP-seq)  | Alon Goren                         | [Module 9](module-9-chipseq)     | None        |
 | 10   | March 8, 2022     | **Module 10:** Population Genetics                      | Nicholas Schork                    | [Module 10](module-10-popGen)    | None        |
-| 11    | March 15, 2021    | <i>Finals Week</i>                                     | -                                  | TBA                              | **Take-Home Final** |
+| 11    | March 15, 2021    | <i>Finals Week</i>                                     | -                                  | -                                | **Take-Home Final** (due 3/15 at 9 am) |
